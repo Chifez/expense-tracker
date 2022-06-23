@@ -1,0 +1,146 @@
+
+:root{
+  --main_size:1.5em;
+  --gen_size:1.2em;
+  --sub_size:0.9em;
+  --income_color:green;
+  --expense_color:red;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-color: #080312; */
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+max-width: 70%;
+margin: 20px;
+padding: 50px;
+background-color: #272428;
+color:white;
+border-radius:10px;
+font-family: monospace;
+}
+
+.balance-header h1{
+  align-self: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+h3,#balance,#income,#expense{
+  text-transform: uppercase;
+  padding:5px 0 5px 0;
+  font-size: var(--gen_size);
+}
+
+.income-expense{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid white;
+  margin: 10px 0;
+  padding: 5px 0;
+  box-shadow: 0  0 0.5em grey;
+}
+
+.income{
+  border-right:2px solid white;
+  padding-right: 50px;
+}
+li{
+  list-style: none;
+  margin: 5px 0;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  border: 2px solid white;
+  padding: 0 10px 0 10px;
+}
+.transactions h1{
+  margin: 10px 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--main_size);
+}
+div .transaction-history {
+  /* display: none; */
+
+}
+
+
+.clear{
+  background-color: #00906c;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 5px;
+  width: 30px;
+  font-size: 0.9em;
+}
+
+#expense_value{
+  border:none;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.9em;
+  margin:0 5px;
+  background-color: red;
+}
+
+#income_value{
+  border:none;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.9em;
+  margin:0 5px;
+  background-color: var(--income_color);
+}
+.new_trans h1{
+  margin: 10px 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--main_size);
+}
+
+.new_trans input{
+  width:100%;
+  height: 25px;
+  background-color: transparent;
+  border:none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: var(--sub_size);
+}
+input:focus{
+  outline: none;
+  caret-color: white;
+}
+.add_bttns{
+  display: flex;
+  flex-direction: column;
+}
+
+#add_income,#add_expense{
+  margin: 5px 0;
+  background-color: #262626;
+  border:1px solid white;
+  color:white;
+  text-transform: uppercase;
+  height: 30px;
+  font-size: var(--sub_size);
+  font-weight:bolder;
+}
+button:focus{
+  outline:none;
+}

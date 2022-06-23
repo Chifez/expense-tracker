@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>expense tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="balance-header">
+        <h1>expense tracker</h1>
+        <div class="balance-diplay">
+          <h3>your balance</h3>
+          <div id="balance">$0</div>
+        </div>
+      </div>
+      <div class="income-expense">
+        <div class="income">
+          <h3>income</h3>
+          <div id="income">$0</div>
+        </div>
+        <span></span>
+        <div class="expense">
+          <h3>expense</h3>
+          <div id="expense">$0</div>
+        </div>
+      </div>
+      <div class="transactions">
+        <h1>transaction history</h1>
+        <ul id="trans_list">
+          
+        </ul>
+
+        <div class="new_trans">
+          <h1>add new transaction</h1>
+          <div class="name">
+            <h3>name</h3>
+            <input type="text" id="name_value">
+          </div>
+          <div class="amount">
+            <h3>amount</h3>
+            <input type="text" id="amount_value">
+          </div>
+          <div class="add_bttns">
+            <button id="add_income">add income</button>
+            <button id="add_expense">add expense</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>
